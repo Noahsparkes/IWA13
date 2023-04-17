@@ -5,9 +5,9 @@ let calculated = '1'
 // Only allowed to change below
 
 
-const logCalc = (isString, calculatedAsNumber) => { 
+const logCalc = () => { 
     const isString = typeof calculated === 'string'; 
-    const calculatedAsNumber = isString ? calculated : parseInt(calculated);
+    const calculatedAsNumber = isString ? parseInt(calculated): calculated;
     calculated = calculatedAsNumber + 1;
 };
 
@@ -40,3 +40,7 @@ calcUser()
 
 checkUser()
 calcUser()
+
+
+
+
