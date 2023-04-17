@@ -5,24 +5,24 @@ let calculated = '1'
 // Only allowed to change below
 
 
-const = logCalc () => { 
-    const isString = typeof calculated = 'numerical-string' 
-    const calculatedAsNumber = isString ? calculated : parseNumber(calculated)
-    calculated === calculatedAsNumber + 1 
-}
+const logCalc = (isString, calculatedAsNumber) => { 
+    const isString = typeof calculated === 'string'; 
+    const calculatedAsNumber = isString ? calculated : parseInt(calculated);
+    calculated = calculatedAsNumber + 1;
+};
 
-const = calcUser () => {
-  logCalc
-  if (calculated > 2) user = 'John'
-  if (calculated > 2) state = 'requesting'
-  if (calculated > 3) state = 'idle'
-}
+const calcUser = () => {
+  logCalc();
+  if (calculated > 2) user = 'John';
+  if (calculated > 2) state = 'requesting';
+  if (calculated > 3) state = 'idle';   // find out if this line is neccessary
+};
 
-const = checkUser () => {
+const checkUser = () => {
 	if (user && state === 'requesting') {
-		console.log(`User: ${user} (${calculated})`)
+		console.log(`user: ${user} (${calculated})`);
 	}
-}
+};
 
 // Only allowed to change code above
 
